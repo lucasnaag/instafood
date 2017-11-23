@@ -1,0 +1,38 @@
+#topo-login{
+    float: left;
+    text-align: right;
+    width: 40%;
+}
+#redef-senha{
+    font-size: 10pt;
+    color: black;
+}
+#topo-register{
+    float: left;
+    text-align: center;
+    width: 10%;
+}
+.linkbotao {
+    font-family: verdana, arial, sans-serif;
+    font-size: 8pt;
+    padding: 3px;
+    background-color: #E6E6E6;
+    color: #000000;
+    text-decoration: none;
+}
+.linkbotao:hover {
+    border-color: #6B85FD;
+    background-color: #DFF5FF;
+}
+.menu-rotativo{
+    position: relative;
+    /*background-color: #DFF5FF;*/
+}
+.listImage{
+    position: relative;
+    height: 380px;  
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+}

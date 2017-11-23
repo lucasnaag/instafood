@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #7F775F;
+}
+.folha{
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.topo{
+    background-color: #FFF2CC;
+    border: 1px solid #FFF2CC;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 60px;
+    position: relative;  
+}
+.topo-logo{
+    float: left;
+    width: 50%;
+    text-align: left;   
+    position: relative;
+}
+.image{
+    margin-top: 0;
+    padding: 0; 
+}
+.logo{
+    margin: 15px;
+}
+.center{
+    background-color: #FFF2CC;
+    border: 1px solid #FFF2CC;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: auto;
+    min-height: 700px;
+    
+}
+.centerFeed{
+    background-color: #FFF2CC;
+    border: 1px solid #FFF2CC;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+ 
+    /*height: 580px;*/
+    min-height: 580px;
+    max-height: 100%;
+}
+
+
+.form-center{
+    text-align: left;
+    margin: 0;
+    top: 60%;
+    left: 35%;
+    width: 30%;
+    padding: 10px;
+    border: 1px outset black;
+    border-radius: 10px;
+    background-color: #DFDFDF;
+    position: absolute;
+}
+
+label.recuperacao{
+    display: inline-block;
+}
+.table-um{
+    width: 40%;
+    text-align: right;
+}
+.table-dois{
+    width: 60%;
+}
+.campo-email{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    position: relative;
+    top: 30%;
+}
+.topo ul{
+    list-style-type: none;
+    position: relative;
+    top: 30%;
+}
+.topo-pesquisa{
+    float: left;
+    width: 50%;
+}
+.pesquisa{
+    background-color: #FFFFFF;
+    border: 1px solid #7F775F;
+    border-radius: 20px; 
+    vertical-align: middle;
+    text-align: right; 
+}
+.topo-icons{
+    float: left;
+    text-align: right;
+    width: 30%;
+    right: 0;
+    position: relative;
+}
+#busca{
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    position: relative;
+    left: 5px;
+    bottom: 2px;
+    font-size: large;   
+}
+.lateral
+{
+    position: absolute;
+    top: 46%;   
+    height: 12%;
+    border-radius: 10px;
+    background-color: #DFDFDF;
+    width: 15%;
+    margin: 6% 0.5%;
+}
+.cadastro{
+    color: #FFF2CC;
+    font-size: 20pt;
+    margin: 0% 37%;
+
+}
+
+/*estilos criados no server vaio*/
+#alert_message{
+    background-color: #d1b7b7;
+    border: 2px solid #888888;
+    border-radius: 10px;
+    height: 50%;
+    color: #910528;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11pt;
+    position: relative;
+}
+
+.cadastro input[type = button]{
+    width: 100px;
+    height: 20px;
+    border: 2px solid #888888;
+    border-radius: 5px;
+    background-color: #999999;    
+    margin-bottom: 10px;
+}
+
+.cadastro input[type = button]:hover{
+    background-color: #bbbbbb;
+    border-style: outset; 
+}
+
+.feed-usuario{
+    position: relative;
+    top: 10px;
+}
+
+.form_post{
+    background-color:#97B2AB;
+}
+#configUm{
+    font-size: 16px;
+    margin-top: -15%;
+    font-family: constantia;
+    padding-left: 35%;
+    text-align: left;
+    position: center;
+}
+#configDois{
+    font-size: 16px;
+    margin-top: -15%;
+    font-family: constantia;
+    padding-left: 35%;
+    text-align: left;
+    position: center;   
+}
+#configTres{
+    font-size: 16px;
+    margin-top: -15%;
+    font-family: constantia;
+    padding-left: 35%;
+    text-align: left;
+    position: center; 
+    
+}
+h1{
+    font-family: constantia;
+}
+h2{
+    font-family: constantia;
+}
+input{
+    font-family: constantia;
+    font-weight: normal;
+    font-size:10pt;
+    color: #2b2727;
+    
+}
+input:hover{
+    background-color: #dddddd;
+}
