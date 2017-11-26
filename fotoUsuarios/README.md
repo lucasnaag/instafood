@@ -1,0 +1,1 @@
+# Pasta onde ficará armazenada as fotos
