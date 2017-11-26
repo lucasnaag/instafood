@@ -1,0 +1,64 @@
+CREATE DATABASE BRASFOOD;
+
+USE BRASFOOD;
+
+CREATE TABLE Usuarios (
+    IDUser INT AUTO_INCREMENT NOT NULL,
+    Nome VARCHAR(100) NOT NULL,
+    Sobrenome VARCHAR(200) NOT NULL,
+    DataNascimento DATE NOT NULL,
+    Sexo CHAR(20) NOT NULL,
+    Telefone CHAR(18) NOT NULL,
+    Email VARCHAR(150) NOT NULL,
+    Senha VARBINARY(16) NOT NULL,
+    CONSTRAINT PK_IDUser PRIMARY KEY (IDUser)
+);
+CREATE TABLE Post 
+(
+	IDPost INT auto_increment NOT NULL,
+    IDUser INT NOT NULL,
+	UrlObjeto  VARCHAR (1000), 
+	Legenda VARCHAR (3000),
+	DataPost DATE NOT NULL,
+    CONSTRAINT PK_IDPost PRIMARY KEY(IDPost),
+    CONSTRAINT FK_IDUser FOREIGN KEY(IDUser) REFERENCES Usuarios(IDUser)
+);
+CREATE TABLE Comentarios
+(
+	IDComent INT AUTO_INCREMENT NOT NULL, 
+    IDUser INT NOT NULL,
+    Comentario VARCHAR (5000) NOT NULL,
+	DataComentario DATE NOT NULL,
+    CONSTRAINT PK_IDComent PRIMARY KEY(IDComent),
+    CONSTRAINT FK_IDUserComentario FOREIGN KEY(IDUser) REFERENCES Usuarios(IDUser)
+);
+CREATE TABLE Feed
+(
+	IDFeed INT AUTO_INCREMENT not null,
+    IDUser int not null,
+    IDPost int not null,
+	UrlFeed VARCHAR(100), 
+    constraint PK_IDFeed primary key(IDFeed),
+	CONSTRAINT FK_IDUserFeed FOREIGN KEY(IDUser) REFERENCES Usuarios(IDUser),
+	CONSTRAINT FK_IDPostFeed FOREIGN KEY(IDPost) REFERENCES Post(IDPost)
+);
+CREATE TABLE Perfil 
+(
+	IDPerfil INT AUTO_INCREMENT NOT NULL,
+    iduser int,
+	UrlFotoPerfil VARCHAR (1000),
+	UrlFotoCapa VARCHAR (1000),
+	NomeExibicao VARCHAR(250),
+	Nivel VARCHAR(100),
+    CONSTRAINT PK_IDPerfil PRIMARY KEY(IDPerfil),
+    CONSTRAINT FK_IDUserPerfil FOREIGN KEY(IDUser) REFERENCES Usuarios(IDUser)
+);
+CREATE TABLE Album
+(
+	IDAlbum INT AUTO_INCREMENT NOT NULL,
+    IDuser int not null,
+	NomeAlbum VARCHAR(200) NOT NULL,
+	UrlMidia VARCHAR(1000),
+    CONSTRAINT PK_IDAlbum PRIMARY KEY(IDAlbum),
+    CONSTRAINT FK_IDUserAlbum FOREIGN KEY(IDUser) REFERENCES Usuarios(IDUser)
+);
