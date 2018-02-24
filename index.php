@@ -56,7 +56,8 @@
 
         <div class="center">
             <div class="logo image">
-                <img src="imagens/logo.png" alt="logotipo BRASSFOOD - USF 2017" title="brassfood-logo">
+		<img src="imagens/logo.png" alt="logotipo BRASSFOOD - USF 2017" title="brassfood-logo">
+		<h1> Instafood alteração de titulo</h1>
             </div> 
             <div class="menu-rotativo">
                 <div class="image">
